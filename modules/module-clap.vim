@@ -2,6 +2,8 @@ let s:user_init_vim = expand($HOME . '/.thinkvim.d/init.vim')
 let s:user_plugins = expand($HOME . '/.thinkvim.d/plugins.yaml')
 let s:user_zshrc = expand($HOME . '/.zshrc')
 let s:user_tmux_conf = expand($HOME . '/.tmux.conf')
+let s:user_kitty_conf = expand($HOME . '/.config/kitty/kitty.conf')
+let s:user_kitty_snazzy_conf = expand($HOME . '/.config/kitty/snazzy.conf')
 
 let g:clap_cache_directory = $DATA_PATH . '/clap'
 let g:clap_theme = 'material_design_dark'
@@ -13,7 +15,7 @@ let g:clap_provider_grep_enable_icon = 1
 let g:clap_prompt_format = '%spinner%%forerunner_status% %provider_id%: '
 
 let g:clap_provider_personalconf = {
-      \ 'source': [s:user_init_vim,s:user_plugins,s:user_zshrc,s:user_tmux_conf],
+      \ 'source': [s:user_init_vim,s:user_plugins,s:user_zshrc,s:user_tmux_conf,s:user_kitty_conf,s:user_kitty_snazzy_conf],
       \ 'sink': 'e',
       \ }
 
